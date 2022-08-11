@@ -19,6 +19,7 @@
 		2E32A88B28A56B910002E7CA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A88A28A56B910002E7CA /* DetailView.swift */; };
 		2E32A88D28A578C60002E7CA /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A88C28A578C60002E7CA /* DetailEditView.swift */; };
 		2E32A88F28A581780002E7CA /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A88E28A581780002E7CA /* ThemeView.swift */; };
+		2E32A89128A5A1F50002E7CA /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A89028A5A1F50002E7CA /* ThemePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2E32A88A28A56B910002E7CA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2E32A88C28A578C60002E7CA /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		2E32A88E28A581780002E7CA /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		2E32A89028A5A1F50002E7CA /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				2E32A87228A5526D0002E7CA /* Assets.xcassets */,
 				2E32A87428A5526D0002E7CA /* Preview Content */,
 				2E32A88528A561AF0002E7CA /* TrailingIconLabelStyle.swift */,
+				2E32A89028A5A1F50002E7CA /* ThemePicker.swift */,
 			);
 			path = ScrumTimer;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E32A89128A5A1F50002E7CA /* ThemePicker.swift in Sources */,
 				2E32A88228A5577E0002E7CA /* DailyScrum.swift in Sources */,
 				2E32A88B28A56B910002E7CA /* DetailView.swift in Sources */,
 				2E32A88D28A578C60002E7CA /* DetailEditView.swift in Sources */,

@@ -12,7 +12,7 @@ struct ScrumsView: View {
     var body: some View {
         List {
             ForEach(scrums, id: \.title) { scrum in
-                NavigationLink(destination: Text(scrum.title)) {
+                NavigationLink(destination: DetailView(scrum: scrum)) {
                     CardView(scrum: scrum)
                         .listRowBackground(scrum.theme.mainColor)
                 }
@@ -26,7 +26,6 @@ struct ScrumsView: View {
             }
             .accessibilityLabel("New Scrum")
         }
-
     }
 }
 

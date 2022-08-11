@@ -16,6 +16,7 @@
 		2E32A88428A55EFA0002E7CA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A88328A55EFA0002E7CA /* CardView.swift */; };
 		2E32A88628A561AF0002E7CA /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A88528A561AF0002E7CA /* TrailingIconLabelStyle.swift */; };
 		2E32A88828A564AD0002E7CA /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A88728A564AD0002E7CA /* ScrumsView.swift */; };
+		2E32A88B28A56B910002E7CA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A88A28A56B910002E7CA /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2E32A88328A55EFA0002E7CA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		2E32A88528A561AF0002E7CA /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		2E32A88728A564AD0002E7CA /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		2E32A88A28A56B910002E7CA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				2E32A87C28A553D10002E7CA /* MeetingView.swift */,
 				2E32A88328A55EFA0002E7CA /* CardView.swift */,
 				2E32A88728A564AD0002E7CA /* ScrumsView.swift */,
+				2E32A88A28A56B910002E7CA /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E32A88228A5577E0002E7CA /* DailyScrum.swift in Sources */,
+				2E32A88B28A56B910002E7CA /* DetailView.swift in Sources */,
 				2E32A88628A561AF0002E7CA /* TrailingIconLabelStyle.swift in Sources */,
 				2E32A88028A557610002E7CA /* Theme.swift in Sources */,
 				2E32A88828A564AD0002E7CA /* ScrumsView.swift in Sources */,

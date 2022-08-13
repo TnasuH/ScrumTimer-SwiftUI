@@ -67,11 +67,16 @@ class ScrumTimer: ObservableObject {
         changeToSpeaker(at: 0)
     }
     
-    /// Stop the timer.
+    /// Stop the scrum.
     func stopScrum() {
-        timer?.invalidate()
-        timer = nil
-        timerStopped = true
+        self.stopTimer()
+        self.timerStopped = true
+    }
+    
+    /// Stop the timer
+    func stopTimer(){
+        self.timer?.invalidate()
+        self.timer = nil
     }
     
     /// Advance the timer to the next speaker.
@@ -92,6 +97,11 @@ class ScrumTimer: ObservableObject {
         secondsElapsed = index * secondsPerSpeaker
         secondsRemaining = lengthInSeconds - secondsElapsed
         startDate = Date()
+        
+        if timer != nil {
+            self.stopTimer()
+        }
+        
         timer = Timer.scheduledTimer(withTimeInterval: frequency, repeats: true) { [weak self] timer in
             if let self = self, let startDate = self.startDate {
                 let secondsElapsed = Date().timeIntervalSince1970 - startDate.timeIntervalSince1970
@@ -106,14 +116,18 @@ class ScrumTimer: ObservableObject {
         guard secondsElapsed <= secondsPerSpeaker else {
             return
         }
-        secondsRemaining = max(lengthInSeconds - self.secondsElapsed, 0)
 
         guard !timerStopped else { return }
+        secondsRemaining = max(lengthInSeconds - self.secondsElapsed, 0)
 
         if secondsElapsedForSpeaker >= secondsPerSpeaker {
             changeToSpeaker(at: speakerIndex + 1)
             
             speakerChangedAction?()
+        }
+        
+        if secondsRemaining == 0 {
+            self.stopScrum()
         }
     }
     

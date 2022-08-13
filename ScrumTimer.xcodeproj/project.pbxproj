@@ -32,6 +32,8 @@
 		2EA6891628A6D48C00245F74 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6891528A6D48C00245F74 /* ErrorView.swift */; };
 		2EA6891828A7106E00245F74 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6891728A7106E00245F74 /* MeetingTimerView.swift */; };
 		2EA6891A28A710D900245F74 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6891928A710D900245F74 /* SpeakerArc.swift */; };
+		2EA6891C28A71F1F00245F74 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6891B28A71F1F00245F74 /* SpeechRecognizer.swift */; };
+		2EA6891E28A7214C00245F74 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6891D28A7214C00245F74 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		2EA6891528A6D48C00245F74 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		2EA6891728A7106E00245F74 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
 		2EA6891928A710D900245F74 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
+		2EA6891B28A71F1F00245F74 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		2EA6891D28A7214C00245F74 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 				2EA6890F28A6B83000245F74 /* History.swift */,
 				2EA6891128A6BAF200245F74 /* ScrumStore.swift */,
 				2EA6891328A6D45C00245F74 /* ErrorWrapper.swift */,
+				2EA6891B28A71F1F00245F74 /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				2E32A89628A5D7610002E7CA /* MeetingFooterView.swift */,
 				2EA6891528A6D48C00245F74 /* ErrorView.swift */,
 				2EA6891728A7106E00245F74 /* MeetingTimerView.swift */,
+				2EA6891D28A7214C00245F74 /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA6891028A6B83000245F74 /* History.swift in Sources */,
+				2EA6891E28A7214C00245F74 /* HistoryView.swift in Sources */,
 				2E32A89128A5A1F50002E7CA /* ThemePicker.swift in Sources */,
 				2E32A88228A5577E0002E7CA /* DailyScrum.swift in Sources */,
 				2E32A89E28A5DACD0002E7CA /* ScrumProgressViewStyle.swift in Sources */,
@@ -241,6 +248,7 @@
 				2E32A88028A557610002E7CA /* Theme.swift in Sources */,
 				2E32A88828A564AD0002E7CA /* ScrumsView.swift in Sources */,
 				2E32A86F28A5526C0002E7CA /* ScrumTimerApp.swift in Sources */,
+				2EA6891C28A71F1F00245F74 /* SpeechRecognizer.swift in Sources */,
 				2EA6891628A6D48C00245F74 /* ErrorView.swift in Sources */,
 				2E32A87D28A553D10002E7CA /* MeetingView.swift in Sources */,
 				2E32A88F28A581780002E7CA /* ThemeView.swift in Sources */,
@@ -378,6 +386,8 @@
 				DEVELOPMENT_TEAM = 5D4XSRW8W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,6 +418,8 @@
 				DEVELOPMENT_TEAM = 5D4XSRW8W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
